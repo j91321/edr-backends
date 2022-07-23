@@ -99,7 +99,8 @@ Some of the product and vendor names may be inaccurate as well. Honestly, I don'
 **Backend:** Apache Solr + PostgreSQL + Redis + Hazelcast
 
 **Reference:** [VMware Carbon Black EDR Server Technology Stack](https://docs.vmware.com/en/VMware-Carbon-Black-EDR/7.7/cb-edr-scm-guide/GUID-757AF3C1-516D-4D23-93CF-A8F8BCE07426.html)
-**Notes:** Kudos to VMware for being the only vendor that provides clear view and diagrams of their technology stack.
+
+**Notes:** Kudos to VMware for being the only vendor, I've seen so far, that provides clear view and diagrams of their technology stack in the documentation.
 
 
 ## WithSecure Elements
