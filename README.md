@@ -1,5 +1,14 @@
 # EDR Backends
 
+EDR vendors are often not transparent about the technology stack their products are build upon. I believe that more transparency can in the end be beneficial for both users and vendors. 
+
+One of the core components of any EDR is the database/query engine/storage. The ability to ingest and query large amounts of data is crucial. Having basic information about the technology used by the EDR product for it's database can help defenders to asses the performance and features better. From the operations perspective it can give you an insight what to expect when it comes to scalability and maintenance. 
+
+## Disclaimer
+
+This is in no way an exhaustive list. Nor should you expect it to be 100% accurate. There is only so much you can figure out by reading the documentation available online. I can and do get stuff wrong. If you see an error and care enough that you would like to see it fixed, please submit a pull request.
+
+Some of the product and vendor names may be inaccurate as well. Honestly, I don't care or have time to keep up with the constant name changes done by marketing departments or vendor acquisitions. This is entirely a personal project.
 
 ## Bitdefender GravityZone
 
@@ -24,7 +33,7 @@
 
 **Backend:** Elasticsearch
 
-**Reference:** Not needed 😀
+**Reference:** [Elastic Security Solution](https://www.elastic.co/guide/en/security/8.3/index.html)
 
 ## ESET Inspect
 
@@ -38,7 +47,7 @@
 
 **Reference:** [MITRE Evaluations APT29 MSSP Steps](https://attackevals.mitre-engenuity.org/enterprise/participants/kaspersky?view=results&adversary=apt29&scenario=1&apt29detection=1.B.1_2), [KATA Distributed solution and multitenancy](https://support.kaspersky.com/KATA/4.1/en-US/194605.htm)
 
-**Note:** Screenshots in MITRE Evals show that Kaspersky uses Elasticsearch for MSSP steps. This doesn't prove KATA itself uses Elasticsearch internaly. However KATA documentation mentions following: *The distributed solution is a two-tier hierarchy of servers with Central Node components installed. This structure sets apart a master control server known as the Primary Central Node (PCN) and slave servers known as Secondary Central Nodes (SCN). Interaction of servers requires connecting SCN to PCN.* This sound like Elasticsearch master and data nodes. 
+**Note:** Screenshots in MITRE Evals show that Kaspersky uses Elasticsearch for MSSP steps. This doesn't prove KATA itself uses Elasticsearch internally. However KATA documentation mentions following: *The distributed solution is a two-tier hierarchy of servers with Central Node components installed. This structure sets apart a master control server known as the Primary Central Node (PCN) and slave servers known as Secondary Central Nodes (SCN). Interaction of servers requires connecting SCN to PCN.* This sound like Elasticsearch master and data nodes. 
 
 ## McAfee ePO (server for MVISION)
 
@@ -54,7 +63,7 @@
 
 **References:** [Qualys Endpoint Detection and Response API](https://www.qualys.com/docs/qualys-edr-api-user-guide.pdf),  [Components of a QQL query](https://qualysguard.qg2.apps.qualys.com/portal-help/en/ud/qql_topics/components_of_a_qql_query.htm), [Investor Presentation](https://investor.qualys.com/static-files/76e233e8-bf59-4d24-99a8-49ccf609feee)
 
-**Notes:** The query language used by Qualys is very similar to Lucene syntax, but with small quirks like backticks usage. Response examples in API manual also include field "score". The "Investor Presentation" mentions both Solr and Elasticsearch under *Analytics and Reporting Engines*.
+**Notes:** The query language used by Qualys is very similar to Lucene syntax, but with small quirks like backtick usage. Response examples in API manual also include field "score". The "Investor Presentation" mentions both Solr and Elasticsearch under *Analytics and Reporting Engines*.
 
 
 ## Sophos Intercept X
@@ -87,10 +96,9 @@
 
 ## VMware CarbonBlack EDR 
 
-**Backend:** Apache Solr + Postgres + Redis + Hazelcast
+**Backend:** Apache Solr + PostgreSQL + Redis + Hazelcast
 
 **Reference:** [VMware Carbon Black EDR Server Technology Stack](https://docs.vmware.com/en/VMware-Carbon-Black-EDR/7.7/cb-edr-scm-guide/GUID-757AF3C1-516D-4D23-93CF-A8F8BCE07426.html)
-
 **Notes:** Kudos to VMware for being the only vendor that provides clear view and diagrams of their technology stack.
 
 
@@ -99,5 +107,4 @@
 **Backend:** Elasticsearch
 
 **References:** [MITRE Evaluations Wizard Spider + Sandworm Step 11.A.4](https://attackevals.mitre-engenuity.org/enterprise/participants/withsecure?view=results&adversary=wizard-spider-sandworm&scenario=2&wizard-spider-sandwormdetection=11.A.4_0)
-
 
