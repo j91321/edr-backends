@@ -107,5 +107,5 @@ Some of the product and vendor names may be inaccurate as well. Honestly, I don'
 
 **Backend:** Elasticsearch
 
-**References:** [MITRE Evaluations Wizard Spider + Sandworm Step 11.A.4](https://attackevals.mitre-engenuity.org/enterprise/participants/withsecure?view=results&adversary=wizard-spider-sandworm&scenario=2&wizard-spider-sandwormdetection=11.A.4_0)
+**References:** [MITRE Evaluations Wizard Spider + Sandworm Step 15.A.1](https://attackevalscdnendpoint.azureedge.net/publicsiteimages/WizardSpider-Sandworm_FS_15.A.1_3.png)
 
